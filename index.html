@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Anaya Fashion - Modern E-commerce Template</title>
+<meta name="description" content="Stylish responsive HTML e-commerce template for fashion and beauty stores.">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Customized Stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    
+
+<body>
+    <!-- Header Start -->
+<div class="row align-items-center py-3 px-xl-5 bg-navy border-bottom">
+    <div class="col-lg-3 d-none d-lg-block">
+        <a href="#" class="d-flex align-items-center text-decoration-none">
+            <img src="img/logo.png" alt="AnayaFashion" style="height: 50px; margin-right: 10px;">
+            <h1 class="m-0 font-weight-bold text-uppercase" style="font-size: 24px;">
+                <span style="color: navy;">Anaya</span> <span class="text-primary">Fashion</span>
+            </h1>
+        </a>
+    </div>
+    <div class="col-lg-6 col-6 text-left">
+        <form>
+            <div class="input-group">
+                <input type="text" class="form-control search-box" placeholder="Search your style">
+                <div class="">
+                    <button class="btn btn-outline-primary"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-3 col-6 text-right">
+        <a href="heart.html" class="btn border">
+  <i class="fas fa-heart text-primary"></i>
+  <span id="heart-count" class="badge badge-pill bg-primary text-white">0</span>
+</a>
+        <a href="cart.html" class="btn border">
+            <i class="fas fa-shopping-cart text-primary"></i>
+            <span id="cart-count" class="badge badge-pill bg-primary text-white">0</span>
+        </a>
+    </div>
+</div>
+<!-- Header End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-4">
+        <div class="row border-top px-xl-6">
+            <div class="col-lg-3 d-none d-lg-block">
+                <button class="btn btn-primary w-100 text-white text-left" data-toggle="collapse" data-target="#sidebarCategories">
+                    <i class="fa fa-bars mr-3"></i> Categories
+                </button>
+                <nav class="collapse show bg-navy" id="sidebarCategories">
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="shop.html" class="dropdown-item">Shop</a></li>
+                        <li><a href="man's.html" class="dropdown-item">Men's Dresses</a></li>
+                        <li><a href="womens-dresses.html" class="dropdown-item">Women's Dresses</a></li>
+                        <li><a href="babys-dresses.html" class="dropdown-item">Baby's Dresses</a></li>
+                        <li><a href="accessories.html" class="dropdown-item">Accessories</a></li>
+                        <li><a href="beauty-care.html" class="dropdown-item">Beauty Care</a></li>
+                        <li><a href="gadgets.html" class="dropdown-item">Gadgets</a></li>
+                        <li><a href="shoes.html" class="dropdown-item">Shoes</a></li>
+                        <li><a href="watches.html" class="dropdown-item">Couple Smartwatch</a></li>
+                        <li><a href="#" class="dropdown-item">Trandy products</a></li>
+                        <li><a href="#" class="dropdown-item">All Categories</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-navy navbar-navy py-1">
+                    <a href="#" class="d-block d-lg-none text-decoration-none">
+                        <h2 class="m-0 text-primary">AnayaFashion</h2>
+                    </a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="registration.html">Register</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Carousel Start -->
+                <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height: 350px;">
+                            <img src="img/bannar1.jpg" class="d-block w-100 h-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-navy">Trendy Outfits</h5>
+                                <p class="text-white">Upgrade your style with 2025’s latest collection</p>
+                                <a href="#" class="btn btn-primary">Explore</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="height: 350px;">
+                            <img src="img/bannar2.jpg" class="d-block w-100 h-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-navy">Flat 15% Off</h5>
+                                <p class="text-white">On all orders above ৳1500</p>
+                                <a href="#" class="btn btn-success">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                <!-- Carousel End -->
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+     
+ <!-- Shop By Categories Start -->
+ <div class="container-fluid py-3 mt-0">
+    <div class="text-center mb-2">
+        <h2 class="section-title px-3 shadow-lg d-inline-block rounded" style="background-color: #001f3f; color: white; padding: 10px 30px;">
+            <span class="px-1">Shop By Categories</span>
+        </h2>
+    </div>
+</div>
+
+    <div class="row px-xl-6">
+        <div class="col-12">
+            <div class="owl-carousel category-carousel text-center">
+                <div class="item">
+                    <img src="img/product-1.jpg" alt="Premium" class="rounded-circle border border-secondary shadow" style="width: 180px; height: 180px; object-fit: cover;">
+                    <p class="mt-2 mb-0">Western Dress</p>
+                </div>
+                <div class="item">
+                    <img src="img/product-2.jpg" alt="Signature" class="rounded-circle border border-secondary shadow" style="width: 180px; height: 180px; object-fit: cover;">
+                    <p class="mt-2 mb-0">Baby Winter</p>
+                </div>
+                <div class="item">
+                    <img src="img/product-3.jpg" alt="Printed Panjabi" class="rounded-circle border border-secondary shadow" style="width: 180px; height: 180px; object-fit: cover;">
+                    <p class="mt-2 mb-0">Gents Jacket</p>
+                </div>
+                <div class="item">
+                    <img src="img/product-4.jpg" alt="Premium" class="rounded-circle border border-secondary shadow" style="width: 180px; height: 180px; object-fit: cover;">
+                    <p class="mt-2 mb-0">Innerwear & Nighty</p>
+                </div>
+                <div class="item">
+                    <img src="img/product-5.jpg" alt="Signature" class="rounded-circle border border-secondary shadow" style="width: 180px; height: 180px; object-fit: cover;">
+                    <p class="mt-2 mb-0">Baby Girl Clothing</p>
+                </div>
+                <div class="item">
+                    <img src="img/product-6.jpg" alt="Printed Panjabi" class="rounded-circle border border-secondary shadow" style="width: 180px; height: 180px; object-fit: cover;">
+                    <p class="mt-2 mb-0">Shirt Combo</p>
+                </div>
+                <div class="item">
+                    <img src="img/product-7.jpg" alt="Premium" class="rounded-circle border border-secondary shadow" style="width: 180px; height: 180px; object-fit: cover;">
+                    <p class="mt-2 mb-0">Ladies Jacket</p>
+                </div>
+                <div class="item">
+                    <img src="img/product-8.jpg" alt="Signature" class="rounded-circle border border-secondary shadow" style="width: 180px; height: 180px; object-fit: cover;">
+                    <p class="mt-2 mb-0"> Baby Shirt Combo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Shop By Categories End -->
+
+
+ <!-- Categories Start -->
+<div class="container-fluid py-3 mt-0">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5 shadow-lg d-inline-block rounded" style="background-color: #001f3f; color: white; padding: 10px 30px;">
+            <span class="px-2">All Categories</span>
+        </h2>
+    </div>
+    <div class="container-fluid pt-5">
+    <div class="row px-xl-5 pb-3">
+
+        <!-- Men's Dresses -->
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="card category-card shadow-sm border-0 h-100">
+                <a href="man's.html" class="position-relative overflow-hidden">
+                    <img src="img/MAN DRESSS.webp" class="card-img-top img-fluid rounded-top" alt="Men's Dresses">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-1">Men's Dresses</h5>
+                    <p class="card-text text-muted small">15 Products</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Women's Dresses -->
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="card category-card shadow-sm border-0 h-100">
+                <a href="womens-dresses.html" class="position-relative overflow-hidden">
+                    <img src="img/woman dresess.jpg" class="card-img-top img-fluid rounded-top" alt="Women's Dresses">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-1">Women's Dresses</h5>
+                    <p class="card-text text-muted small">15 Products</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Baby's Dresses -->
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="card category-card shadow-sm border-0 h-100">
+                <a href="babys-dresses.html" class="position-relative overflow-hidden">
+                    <img src="img/Baby's dresses.avif" class="card-img-top img-fluid rounded-top" alt="Baby's Dresses">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-1">Baby's Dresses</h5>
+                    <p class="card-text text-muted small">15 Products</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accessories -->
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="card category-card shadow-sm border-0 h-100">
+                <a href="accessories.html" class="position-relative overflow-hidden">
+                    <img src="img/Accessories.avif" class="card-img-top img-fluid rounded-top" alt="Accessories">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-1">Accessories</h5>
+                    <p class="card-text text-muted small">15 Products</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beauty Care -->
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="card category-card shadow-sm border-0 h-100">
+                <a href="beauty-care.html" class="position-relative overflow-hidden">
+                    <img src="img/beauty care.jpg" class="card-img-top img-fluid rounded-top" alt="Beauty Care">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-1">Beauty Care</h5>
+                    <p class="card-text text-muted small">15 Products</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gadgets -->
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="card category-card shadow-sm border-0 h-100">
+                <a href="gadgets.html" class="position-relative overflow-hidden">
+                    <img src="img/gedgetss.jpg" class="card-img-top img-fluid rounded-top" alt="Gadgets">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-1">Gadgets</h5>
+                    <p class="card-text text-muted small">15 Products</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shoes -->
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="card category-card shadow-sm border-0 h-100">
+                <a href="shoes.html" class="position-relative overflow-hidden">
+                    <img src="img/shoess.jpg" class="card-img-top img-fluid rounded-top" alt="Shoes">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-1">Shoes</h5>
+                    <p class="card-text text-muted small">15 Products</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Couple Smartwatch -->
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="card category-card shadow-sm border-0 h-100">
+                <a href="watches.html" class="position-relative overflow-hidden">
+                    <img src="img/Couple Smartwatch.jpg" class="card-img-top img-fluid rounded-top" alt="Couple Smartwatch">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-1">Couple Smartwatch</h5>
+                    <p class="card-text text-muted small">15 Products</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Categories End -->
+
+<!-- Offer Start -->
+<div class="container-fluid offer pt-5">
+    <div class="row px-xl-5">
+        <div class="col-md-6 pb-4">
+            <div class="offer-box position-relative bg-secondary text-white mb-4 overflow-hidden">
+                <img src="img/offer1.jpg" alt="Spring Collection" class="w-100 h-100 object-fit-cover offer-img">
+                <div class="offer-content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-end pr-5 text-right">
+                    <h5 class="text-uppercase text-primary mb-4">20% Off All Orders</h5>
+                    <h1 class="mb-4 font-weight-bold">Spring Collection</h1>
+                    <a href="#" class="btn btn-outline-light btn-lg transition">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 pb-4">
+            <div class="offer-box position-relative bg-secondary text-white mb-4 overflow-hidden">
+                <img src="img/offer2.jpg" alt="Winter Collection" class="w-100 h-100 object-fit-cover offer-img">
+                <div class="offer-content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-start pl-5 text-left">
+                    <h5 class="text-uppercase text-primary mb-4">20% Off All Orders</h5>
+                    <h1 class="mb-4 font-weight-bold">Winter Collection</h1>
+                    <a href="#" class="btn btn-outline-light btn-lg transition">Shop Now</a>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- Offer End -->
+
+
+<!-- Products Start -->
+<div class="container-fluid pt-5">
+    <div class="text-center mb-4">
+         <h2 class="section-title px-5 shadow-lg d-inline-block rounded" style="background-color: #001f3f; color: white; padding: 10px 30px;">
+            <span class="px-2">Trandy products</span>
+        </h2>
+    </div>
+        <!-- Use this instead of 5 per row -->
+        <div class="row px-xl-5 pb-3">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-2 pb-1">
+                        <h6 class="text-truncate mb-1">Colorful Stylish </h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                        </div>
+                        <div class="ratting text-warning">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="product1.html" class="btn btn-sm text-dark p-0">
+                            <i class="fas fa-eye text-primary mr-1"></i>View Detail
+                        </a>
+                        <!-- Updated button with product data -->
+                        <a href="#" 
+                           class="btn btn-sm text-dark p-0 add-to-cart"
+                           data-id="1"
+                           data-name="Colorful Stylish"
+                           data-price="123"
+                           data-image="img/product-1.jpg"
+                           data-size="M"
+                           data-color="Red">
+                           <i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- Use this instead of 5 per row -->
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-2 pb-1">
+                    <h6 class="text-truncate mb-2">Shirt</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="ratting text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="product2.html" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View product</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 add-to-cart"
+                     data-id="2"
+                     data-name="Shirt"
+                     data-price="123"
+                     data-image="img/product-2.jpg"
+                     data-size="L"
+                     data-color="Blue">
+                     <i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Use this instead of 5 per row -->
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-2 pb-1">
+                    <h6 class="text-truncate mb-2">Colorful Stylish </h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="ratting text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="product3.html" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                    <a href="#"
+                      class="btn btn-sm text-dark p-0 add-to-cart"
+                      data-id="3"
+                      data-name="Colorful Stylish"
+                      data-price="123"
+                      data-image="img/product-3.jpg"
+                      data-size="S"
+                      data-color="Green">
+                      <i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart
+                      </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Use this instead of 5 per row -->
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-2 pb-1">
+                    <h6 class="text-truncate mb-2">Colorful Stylish</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="ratting text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="product4.html" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                    <a href="#"
+                      class="btn btn-sm text-dark p-0 add-to-cart"
+                      data-id="4"
+                      data-name="Colorful Stylish"
+                      data-price="123"
+                      data-image="img/product-4.jpg"
+                      data-size="S"
+                      data-color="Green">
+                      <i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart
+                      </a>
+                </div>
+            </div>
+        </div>
+        <!-- Use this instead of 5 per row -->
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-2 pb-1">
+                    <h6 class="text-truncate mb-2">Colorful Stylish</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="ratting text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="product5.html" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                    <a href="#"
+                      class="btn btn-sm text-dark p-0 add-to-cart"
+                      data-id="5"
+                      data-name="Colorful Stylish"
+                      data-price="123"
+                      data-image="img/product-5.jpg"
+                      data-size="S"
+                      data-color="Green">
+                      <i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart
+                      </a>
+                </div>
+            </div>
+        </div>
+        <!-- Use this instead of 5 per row -->
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="img/product-6.jpg" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-2 pb-1">
+                    <h6 class="text-truncate mb-2">Colorful Stylish</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="ratting text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="product6.html" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                    <a href="#"
+                      class="btn btn-sm text-dark p-0 add-to-cart"
+                      data-id="6"
+                      data-name="Colorful Stylish"
+                      data-price="123"
+                      data-image="img/product-6.jpg"
+                      data-size="S"
+                      data-color="Green">
+                      <i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart
+                      </a>
+                </div>
+            </div>
+        </div>
+        <!-- Use this instead of 5 per row -->
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="img/product-7.jpg" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-2 pb-1">
+                    <h6 class="text-truncate mb-2">Colorful Stylish</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="ratting text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="product7.html" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                    <a href="#"
+                      class="btn btn-sm text-dark p-0 add-to-cart"
+                      data-id="7"
+                      data-name="Colorful Stylish"
+                      data-price="123"
+                      data-image="img/product-7.jpg"
+                      data-size="S"
+                      data-color="Green">
+                      <i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart
+                      </a>
+                </div>
+            </div>
+        </div>
+        <!-- Use this instead of 5 per row -->
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="img/product-8.jpg" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-3 pb-1">
+                    <h6 class="text-truncate mb-2">Colorful Stylish</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="ratting text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="product8.html" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                    <a href="#"
+                      class="btn btn-sm text-dark p-0 add-to-cart"
+                      data-id="8"
+                      data-name="Colorful Stylish"
+                      data-price="123"
+                      data-image="img/product-8.jpg"
+                      data-size="S"
+                      data-color="Green">
+                      <i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Products End -->
+
+<!-- Subscribe Start -->
+<div class="container-fluid bg-navy my-5">
+    <div class="row justify-content-md-center py-5 px-xl-5">
+        <div class="col-md-6 col-12 py-5">
+            <div class="text-center mb-2 pb-2">
+                <h2 class="section-title px-5 mb-3"><span>Stay Updated</span></h2>
+                <p class="text-light">Stay in touch with our latest updates and offers!</p>
+            </div>
+            <form action="">
+                <div class="input-group">
+                    <input type="text" class="form-control border-0 p-4" placeholder="Enter your email">
+                    <div class="">
+                        <button class="btn btn-primary px-4">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Subscribe End -->
+
+<!-- Featured Start -->
+<div class="text-center mb-2 pb-2">
+    <h2 class="section-title px-5 mb-3"><span>Delivery System</span></h2>
+</div>
+<div class="container-fluid pt-5">
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border border-navy mb-4" style="padding: 30px;">
+                <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border border-navy mb-4" style="padding: 30px;">
+                <h1 class="fa fa-shipping-fast text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">Free Shipping</h5>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border border-navy mb-4" style="padding: 30px;">
+                <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">14-Day Return</h5>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border border-navy mb-4" style="padding: 30px;">
+                <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Featured End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-navy text-navy mt-5 pt-5">
+    <div class="row px-xl-5 pt-3">
+        <div class="col-lg-4 col-md-10 mb-5 pr-3 pr-xl-5">
+            <a href="#" class="d-flex align-items-center text-decoration-none">
+                <img src="img/logo.png" alt="AnayaFashion" style="height: 50px; margin-right: 10px;">
+                <h1 class="m-0 font-weight-bold text-uppercase" style="font-size: 24px;">
+                    <span style="color: navy;">Anaya</span> <span class="text-primary">Fashion</span>
+                </h1>
+                
+            </a>
+            <p>Providing the best quality at your doorstep with 24/7 support.</p>
+            <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York</p>
+            <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
+            <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-navy mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column">
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Cart</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                        <a class="text-navy" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-navy mb-4">Support</h5>
+                    <div class="d-flex flex-column">
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-navy mb-4">Follow Us</h5>
+                    <p>Stay connected via social platforms.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid" src="img/payments.png" alt="" style="width:300ox; height: 100%;">
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row border-top border-navy mx-xl-5 py-4">
+        <div class="col-md-6 text-center text-md-left text-navy">
+            &copy; <a class="text-primary" href="#">CoderTtust</a> | All Rights Reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+            <p>Designed by Koly.Web Developer.</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- jQuery (Owl Carousel এর জন্য পূর্ণাঙ্গ version) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS এবং Dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Custom script.js -->
+<script src="script.js"></script>
+</body>
+</html>
