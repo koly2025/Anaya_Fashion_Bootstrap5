@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anaya Fashion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header Start -->
+<div class="row align-items-center py-3 px-xl-5 bg-navy border-bottom">
+    <div class="col-lg-3 d-none d-lg-block">
+        <a href="#" class="d-flex align-items-center text-decoration-none">
+            <img src="img/logo.png" alt="AnayaFashion" style="height: 50px; margin-right: 10px;">
+            <h1 class="m-0 font-weight-bold text-uppercase" style="font-size: 24px;">
+                <span style="color: navy;">Anaya</span> <span class="text-primary">Fashion</span>
+            </h1>
+        </a>
+    </div>
+    <div class="col-lg-6 col-6 text-left">
+        <form>
+            <div class="input-group">
+                <input type="text" class="form-control search-box" placeholder="Search your style">
+                <div class="">
+                    <button class="btn btn-outline-primary"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-3 col-6 text-right">
+        <a href="checkout.html" class="btn border">
+            <i class="fas fa-heart text-primary"></i>
+            <span class="badge badge-pill bg-primary text-white">0</span>
+        </a>
+        <a href="cart.html" class="btn border">
+            <i class="fas fa-shopping-cart text-primary"></i>
+            <span id="cart-count" class="badge badge-pill bg-primary text-white">0</span>
+        </a>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid mb-4">
+    <div class="row border-top px-xl-5">
+        <!-- Categories Sidebar -->
+        <div class="col-lg-3 d-none d-lg-block">
+            <div class="btn-group d-flex align-items-center justify-content-between bg-primary text-white w-100"
+                 data-toggle="collapse" data-target="#categoriesMenu"
+                 style="height: 65px; padding: 0 20px; cursor: pointer;">
+                <h6 class="m-0">Categories</h6>
+                <i class="fa fa-angle-down text-dark"></i>
+            </div>
+            <nav class="collapse position-absolute bg-light border mt-1" id="categoriesMenu"
+                 style="z-index: 999; width: calc(100% - 30px);">
+                <div class="navbar-nav w-100 overflow-auto" style="max-height: 400px;">
+                    <a href="shop.html" class="nav-item nav-link">Shop</a>
+                    <a href="man's.html" class="nav-item nav-link">Men's Dresses</a>
+                    <a href="womens-dresses.html" class="nav-item nav-link">Women's Dresses</a>
+                    <a href="babys-dresses.html" class="nav-item nav-link">Baby's Dresses</a>
+                    <a href="accessories.html" class="nav-item nav-link">Accessories</a>
+                    <a href="beauty-care.html" class="nav-item nav-link">Beauty Care</a>
+                    <a href="gadgets.html" class="nav-item nav-link">Gadgets</a>
+                    <a href="shoes.html" class="nav-item nav-link">Shoes</a>
+                    <a href="watches.html" class="nav-item nav-link">Couple Smartwatch</a>
+                    <a href="#" class="nav-item nav-link">Trendy Products</a>
+                    <a href="#" class="nav-item nav-link">All Categories</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Navbar -->
+        <div class="col-lg-9">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                <!-- Logo -->
+                <a href="index.html" class="text-decoration-none d-block d-lg-none">
+                    <h1 class="m-0 display-5 font-weight-semi-bold">
+                        <span class="text-primary font-weight-bold border px-3 mr-1">A</span>nayaFashion
+                    </h1>
+                </a>
+
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav items -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="shop.html" class="nav-item nav-link">Shop</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="login.html" class="nav-item nav-link">Login</a>
+                        <a href="registration.html" class="nav-item nav-link">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Navbar End -->
+
+   <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+        <h1 class="font-weight-semi-bold text-uppercase mb-3 text-white">Shopping Cart</h1>
+        <div class="d-inline-flex">
+            <p class="m-0 text-white"><a href="index.html" class="text-primary">Home</a></p>
+            <p class="m-0 px-2 text-white">-</p>
+            <p class="m-0 text-white">Shopping Cart</p>
+        </div>
+      </div>
+    </div>
+<!-- Page Header End -->
+
+
+
+<!-- Cart Table -->
+
+<div class="container mt-5">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cartItems">
+            <!-- Cart items will be displayed here dynamically -->
+        </tbody>
+    </table>
+
+    <h4>Delivery Charge: $<span id="deliveryCharge">0</span></h4>
+    <h4>Total: $<span id="totalPrice">0</span></h4>
+
+    <label for="location" class="mt-3">Select Delivery Location:</label>
+    <select id="location" class="form-select" onchange="updateDeliveryCharge()">
+        <option value="inside">Inside Dhaka</option>
+        <option value="outside">Outside Dhaka</option>
+    </select>
+
+    <a href="#" class="btn btn-primary mt-3" id="checkoutBtn">Proceed to Checkout</a>
+</div>
+
+<!-- Checkout Form (Initially Hidden) -->
+<div class="container mt-5 checkout-container" id="checkoutFormDiv" style="display: none;">
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+        <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" id="address" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="text" id="phone" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="totalPrice" class="form-label">Total Price</label>
+            <input type="text" id="totalPrice" class="form-control" readonly>
+        </div>
+        <button type="submit" class="btn btn-primary">Confirm Order</button>
+    </form>
+</div>
+<!-- Featured Start -->
+<div class="container-fluid py-3 mt-0">
+    <div class="text-center mb-2">
+        <h2 class="section-title px-3 shadow-lg d-inline-block rounded" style="background-color: #001f3f; color: white; padding: 10px 30px;">
+            <span class="px-1">Delivery System</span>
+        </h2>
+    </div>
+</div>
+<div class="container-fluid pt-5">
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border border-navy mb-4" style="padding: 30px;">
+                <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border border-navy mb-4" style="padding: 30px;">
+                <h1 class="fa fa-shipping-fast text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">Free Shipping</h5>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border border-navy mb-4" style="padding: 30px;">
+                <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">14-Day Return</h5>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border border-navy mb-4" style="padding: 30px;">
+                <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Featured End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-navy text-navy mt-5 pt-5">
+    <div class="row px-xl-5 pt-3">
+        <div class="col-lg-4 col-md-10 mb-5 pr-3 pr-xl-5">
+            <a href="#" class="d-flex align-items-center text-decoration-none">
+                <img src="img/logo.png" alt="AnayaFashion" style="height: 50px; margin-right: 10px;">
+                <h1 class="m-0 font-weight-bold text-uppercase" style="font-size: 24px;">
+                    <span style="color: navy;">Anaya</span> <span class="text-primary">Fashion</span>
+                </h1>
+                
+            </a>
+            <p>Providing the best quality at your doorstep with 24/7 support.</p>
+            <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York</p>
+            <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
+            <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-navy mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column">
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Cart</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                        <a class="text-navy" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-navy mb-4">Support</h5>
+                    <div class="d-flex flex-column">
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms</a>
+                        <a class="text-navy mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-navy mb-4">Follow Us</h5>
+                    <p>Stay connected via social platforms.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid" src="img/payments.png" alt="" style="width:300ox; height: 100%;">
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row border-top border-navy mx-xl-5 py-4">
+        <div class="col-md-6 text-center text-md-left text-navy">
+            &copy; <a class="text-primary" href="#">CoderTtust</a> | All Rights Reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+            <p>Designed by Koly.Web Developer.</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- jQuery (Owl Carousel এর জন্য পূর্ণাঙ্গ version) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS এবং Dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Custom script.js -->
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
